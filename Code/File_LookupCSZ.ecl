@@ -5,7 +5,7 @@
    STRING2    State;
    UNSIGNED3  ZipCode;
    END;
-  SHARED Filename := '~CLASS::BMF::OUT::LookupCSZ';
+  SHARED Filename := '~CLASS::WKSHP::OUT::LookupCSZ';
 
   EXPORT File := DATASET(Filename,Layout,FLAT);
   EXPORT FilePlus := DATASET(Filename,
@@ -13,5 +13,5 @@
   														 
   EXPORT IDX_st_city := INDEX(FilePlus,
                              {State,City,recpos},
-                             '~CLASS::BMF::KEY::LookupCSZ');
+                             '~CLASS::WKSHP::KEY::LookupCSZ');
 END;
