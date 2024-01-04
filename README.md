@@ -9,12 +9,22 @@ ECL Code Repo for 2024 mini-workshops
 
 ## Datasets
 Training (Internal):
+
 Persons
+
 Accounts
+
 People
+
 Property
+
 Vehicle
+
 TaxData
+
+NamesPhones
+
+NamesPhonesUpd
 
 (External):
 [KJV Bible](https://av1611.com)
