@@ -18,7 +18,7 @@ PVDenorm := DENORMALIZE(PVOnly,
                         $.File_Vehicle.File,
                         LEFT.id = RIGHT.personid,
                         ChildMove2(LEFT,RIGHT,COUNTER))
-                        :PERSIST('~ODSCEast::PERSIST::PeopleVehicles');
+                        :PERSIST('~FourCorn::PERSIST::PeopleVehicles');
 PV_DNOut := OUTPUT(PVDenorm);                        
 
 
@@ -38,7 +38,7 @@ PV_DNOut := OUTPUT(PVDenorm);
                             $.File_TaxData.File,
                             LEFT.propertyid = RIGHT.propertyid,
                             ChildMove(LEFT,RIGHT,COUNTER))
-                            :PERSIST('~ODSCEast::PERSIST::PropTax');
+                            :PERSIST('~FourCorn::PERSIST::PropTax');
 PT_DNOut := OUTPUT(DenormProp);
 
 $.Layouts.PeopleAll ParentMove3($.Layouts.PeopleVehicles Le) := TRANSFORM
@@ -60,4 +60,4 @@ $.Layouts.PeopleAll ParentMove3($.Layouts.PeopleVehicles Le) := TRANSFORM
                                  LEFT.id = RIGHT.personid,
                                  ChildMove3(LEFT,RIGHT,COUNTER));
 
-OUTPUT(Denorm_PeopleAll,,'~ODSCEast::OUT::PeopleAll',OVERWRITE);                            
+OUTPUT(Denorm_PeopleAll,,'~WRKSHOP::OUT::PeopleAll',OVERWRITE);                            
