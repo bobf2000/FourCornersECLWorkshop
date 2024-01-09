@@ -1,6 +1,6 @@
 ﻿IMPORT $;
 EXPORT File_Persons_Slim := MODULE
-SHARED Layout := RECORD
+EXPORT Layout := RECORD
   unsigned4 recid;
   unsigned8 id;
   string15 firstname;
@@ -15,13 +15,13 @@ SHARED Layout := RECORD
   unsigned4 csz_id;
  END;
  
- EXPORT File     := DATASET('~CLASS::BMF::OUT::Persons_Slim',Layout,FLAT);
- EXPORT FilePlus := DATASET('~CLASS::BMF::OUT::Persons_Slim',{Layout, UNSIGNED8 recpos {virtual(fileposition)}},FLAT);
+ EXPORT File     := DATASET('~wrkshp::OUT::Persons_Slim',Layout,FLAT);
+ EXPORT FilePlus := DATASET('~wrkshp::OUT::Persons_Slim',{Layout, UNSIGNED8 recpos {virtual(fileposition)}},FLAT);
  
  EXPORT IDX_CSZ_lname_fname := INDEX(FilePlus,
                                      {CSZ_ID,LastName,FirstName,recpos},
-                                      '~CLASS::BMF::KEY::CSZ_lname_fname');	
- EXPORT IDX_lname_fname := INDEX(FilePlus,
-                                 {LastName,FirstName,recpos},
-                                  '~CLASS::BMF::KEY::lname_fname');
+                                      '~wrkshp::KEY::CSZ_lname_fname');	
+ EXPORT IDX_lname_fname     := INDEX(FilePlus,
+                                     {LastName,FirstName,recpos},
+                                     '~wrkshp::KEY::lname_fname');
 END;																	

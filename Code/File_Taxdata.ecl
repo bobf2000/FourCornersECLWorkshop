@@ -20,5 +20,5 @@ EXPORT Layout :=  RECORD
     UNSIGNED2 stories_number;
    END;
 	 
-EXPORT File :=	DATASET('~class::bmf::AdvECL::taxdata',Layout,THOR);
+EXPORT File :=	DATASET('~wrkshp::in::taxdata',Layout,THOR);
    END; 

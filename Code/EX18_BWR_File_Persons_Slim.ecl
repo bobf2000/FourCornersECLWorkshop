@@ -11,4 +11,4 @@ SlimRecs := JOIN($.STD_Persons.File,
 								      LEFT.state=RIGHT.state,
 								      Slimdown(LEFT,RIGHT),LEFT OUTER, LOOKUP);
 								 
-OUTPUT(SlimRecs,,'~CLASS::BMF::OUT::Persons_Slim',overwrite);
+OUTPUT(SlimRecs,,'~WRKSHP::OUT::Persons_Slim',overwrite);

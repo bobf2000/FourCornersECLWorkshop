@@ -60,4 +60,4 @@ $.Layouts.PeopleAll ParentMove3($.Layouts.PeopleVehicles Le) := TRANSFORM
                                  LEFT.id = RIGHT.personid,
                                  ChildMove3(LEFT,RIGHT,COUNTER));
 
-OUTPUT(Denorm_PeopleAll,,'~WRKSHOP::OUT::PeopleAll',OVERWRITE);                            
+OUTPUT(Denorm_PeopleAll,,'~WRKSHP::OUT::PeopleAll',OVERWRITE);                            

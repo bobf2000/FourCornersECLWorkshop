@@ -5,7 +5,7 @@ layout_min_max := RECORD
   Max_Value := MAX(GROUP, $.File_Accounts.File.HighCredit);
 END;
 
-// EXPORT 
+
 XTAB_Accounts_HighCredit_MaxMin := TABLE($.File_Accounts.File, layout_min_max);
 OUTPUT(XTAB_Accounts_HighCredit_MaxMin);
 

@@ -5,7 +5,7 @@ R := RECORD
   STRING Txt;
   END;
 	
-d := DATASET('~kjv::tutorialIN',R,CSV(SEPARATOR('')));
+d := DATASET('~wrkshp::in::KJV',R,CSV(SEPARATOR('')));
 
 OUTPUT(d,NAMED('RawInput'));
 
@@ -14,7 +14,7 @@ R TextOntoReference(R le, R ri) := TRANSFORM
   END;	
 
 Rld := ROLLUP(d,LEFT.Txt[1]='$' AND RIGHT.Txt[1]<>'$',TextOntoReference(LEFT,RIGHT))
-       :PERSIST('~KJV::BMF::ROLLUP');
+       :PERSIST('~KJV::WRKSHP::PERSIST::ROLLUP');
        
 OUTPUT(Rld,NAMED('RawRolled'));       
 

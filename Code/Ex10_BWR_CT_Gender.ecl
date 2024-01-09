@@ -5,7 +5,6 @@ r := RECORD
   CNT := COUNT(GROUP);
 END;
 
-// EXPORT 
 XTAB_Persons_Gender := SORT(TABLE($.File_Persons.File,r,Gender),Gender);
 
 OUTPUT(XTAB_Persons_Gender);

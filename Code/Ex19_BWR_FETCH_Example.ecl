@@ -9,8 +9,8 @@ PtblRec := RECORD
   UNSIGNED4 CSZ_ID := Person.CSZ_ID;	
 END;
 
-DataFile := '~AAQ::TestFetch';
-KeyFile  := '~AAQ::TestFetchKey';
+DataFile := '~WRKSHP::TestFetch';
+KeyFile  := '~WRKSHP::TestFetchKey';
 
 PtblOut := OUTPUT(TABLE(Person(lastname[1..3]='WIK'),PtblRec),,DataFile,OVERWRITE);
 

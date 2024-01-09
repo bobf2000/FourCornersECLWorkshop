@@ -20,7 +20,7 @@ Rollup_CSZ := ROLLUP(S_Recs,
                      LEFT.City=RIGHT.City,
                      RollCSV(LEFT,RIGHT));
 
-OUTPUT(Rollup_CSZ,,'~CLASS::WKSHP::OUT::LookupCSZ',OVERWRITE);
+OUTPUT(Rollup_CSZ,,'~WRKSHP::OUT::LookupCSZ',OVERWRITE);
 
 
 

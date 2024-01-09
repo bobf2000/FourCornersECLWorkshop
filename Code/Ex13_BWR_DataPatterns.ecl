@@ -1,8 +1,8 @@
 ﻿IMPORT $,STD;
 Persons := $.File_Persons.File;
-profileResults := STD.DataPatterns.Profile(Persons):PERSIST('~CLASS::BMF::Persist::PersonProfile');
+profileResults := STD.DataPatterns.Profile(Persons):PERSIST('~WRKSHP::Persist::PersonProfile');
 bestrecord     := STD.DataPatterns.BestRecordStructure(Persons)
-                  :PERSIST('~CLASS::BMF::Persist::PersonBR');
+                  :PERSIST('~WRKSHP::Persist::PersonBR');
 OUTPUT(profileResults, ALL, NAMED('profileResults'));
 OUTPUT(bestrecord, ALL, NAMED('BestRecord'));
 

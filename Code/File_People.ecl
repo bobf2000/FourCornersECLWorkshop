@@ -9,5 +9,5 @@ EXPORT Layout := RECORD
   STRING1   gender;
   STRING8   birthdate;
   END;
-EXPORT File := DATASET('~CLASS::BMF::AdvECL::People',Layout,THOR);
+EXPORT File := DATASET('~wrkshp::in::People',Layout,THOR);
 END;

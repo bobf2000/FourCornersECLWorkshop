@@ -1,24 +1,7 @@
-﻿IMPORT BWR_Training_Examples AS X;
-//Sample data to demonstarte Example 2
-Layout := RECORD
-	UNSIGNED8 ID;
-	STRING15  FirstName;
-	STRING25  LastName;
-	STRING15  MiddleName;
-	STRING2   NameSuffix;
-  STRING8   FileDate;
-	UNSIGNED2 BureauCode;
-	STRING1   MaritalStatus;
-	STRING1   Gender;
-	UNSIGNED1 DependentCount;
-  STRING8   BirthDate;
-  STRING42  StreetAddress;
-  STRING20  City;
-  STRING2   State;
-  STRING5   ZipCode;
-END;
-Persons := DATASET('~CLASS::BMF::Intro::Persons',layout,FLAT);
+﻿IMPORT $;
+Persons := $.File_Persons.File;
 
+//Exampl 1 using an INLINE Dataset
  MyRec := RECORD
   STRING1  Value1;
   STRING1  Value2;
@@ -47,6 +30,8 @@ OUTPUT(SORT(MyTable,Value1));
 	3		B		1			4
 */
 
+
+//Example 2 using the Persons Dataset
  r := RECORD
   Persons.LastName;
   Persons.Gender;

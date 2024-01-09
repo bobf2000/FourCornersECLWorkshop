@@ -22,5 +22,5 @@ EXPORT Layout := RECORD
    UNSIGNED2 half_baths;
    UNSIGNED2 year_built;
   END;
-EXPORT File := DATASET('~class::bmf::AdvECL::property',Layout,THOR);
+EXPORT File := DATASET('~wrkshp::in::property',Layout,THOR);
  END;

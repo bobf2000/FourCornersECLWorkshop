@@ -18,9 +18,9 @@ EXPORT File_NamesPhones := MODULE
   STRING20  LName;
   STRING5   Name_Suffix;
  END;
- EXPORT File := DATASET('~ecltraining::in::namephones',Layout,THOR);
+ EXPORT File := DATASET('~wrkshp::in::namephones',Layout,THOR);
 
 //Added in Exercise 2F: 
  EXPORT IDX_lname_pay := INDEX(File,{Lname},{File},
-                               '~CLASS::BMF::IDX::NamesPhonesPayload');
+                               '~wrkshp::IDX::NamesPhonesPayload');
 END;
