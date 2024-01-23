@@ -1,5 +1,5 @@
 {
     "ecl.forceProxySupport": true,
-    "ecl.launchConfiguration": "CodeStallions",
+    "ecl.launchConfiguration": "CloudHPCC",
     "ecl.targetCluster": {}
 }

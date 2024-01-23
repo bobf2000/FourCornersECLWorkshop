@@ -20,7 +20,7 @@ EXPORT FN_GetPrice(Zip, Assess_val, Year_acq,
 
 		myIndepData := PROJECT(myInDs, PrepData(LEFT,COUNTER));
 
-		mymodel := DATASET('~class::bmf::whshp::mymodelR',ML_Core.Types.Layout_Model2,FLAT,PRELOAD);
+		mymodel := DATASET('~wrkshp::mymodelR',ML_Core.Types.Layout_Model2,FLAT,PRELOAD);
 
 		myLearner := LT.RegressionForest(10,,10,[1]);
 

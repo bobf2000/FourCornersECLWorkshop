@@ -7,7 +7,7 @@ myLearnerR    := LT.RegressionForest(10,,10,[1]);
 
 // Get the training model
 myModelR      := myLearnerR.GetModel($.Convert02.myIndTrainDataNF,$.Convert02.myDepTrainDataNF);
-OUTPUT(myModelR,,'~class::bmf::whshp::mymodelR',overwrite);
+OUTPUT(myModelR,,'~wrkshp::mymodelR',overwrite);
 
 // Apply the model on test data
 predictedDeps := myLearnerR.Predict(myModelR, $.Convert02.myIndTestDataNF);

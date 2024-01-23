@@ -20,7 +20,7 @@ OUTPUT($.File_PeopleAll.Vehicle,NAMED('DNormVeh'));
 OUTPUT($.File_NamesPhones.File,NAMED('NamesPhones'));
 OUTPUT($.File_NamesPhonesUpd.File,NAMED('NamesPhonesUpd'));
 
-d := DATASET('~kjv::tutorialIN',{STRING Txt},CSV(SEPARATOR('')));
+d := DATASET('~wrkshp::in::KJV',{STRING Txt},CSV(SEPARATOR('')));
 OUTPUT(d,NAMED('kjv'));
 
 

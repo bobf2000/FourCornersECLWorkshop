@@ -1,7 +1,7 @@
 ﻿IMPORT $;
 Persons := $.File_Persons.File;
 
-//Exampl 1 using an INLINE Dataset
+//Example 1 using an INLINE Dataset
  MyRec := RECORD
   STRING1  Value1;
   STRING1  Value2;

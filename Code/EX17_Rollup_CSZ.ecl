@@ -1,5 +1,4 @@
 ﻿IMPORT $;
-
 Layout_T_recs := RECORD
   UNSIGNED4 CSZ_ID := $.STD_Persons.File.RecID;
   $.STD_Persons.File.City;
