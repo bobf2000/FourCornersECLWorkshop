@@ -1,5 +1,5 @@
 # FourCornersECLWorkshop
-ECL Code Repo for 2024 mini-workshops
+ECL Code Repo for 2024 ECL workshop
 
 ## Four Corners of ECL
 1. Queries
@@ -7,8 +7,8 @@ ECL Code Repo for 2024 mini-workshops
 3. Delivery
 4. Analytics (Machine Learning)
 
-## Datasets
-Training (Internal):
+## Datasets Used in Workshop
+(Internal):
 
 Persons
 
