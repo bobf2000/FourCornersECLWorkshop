@@ -3,7 +3,7 @@
 Persons  := $.File_Persons.File;
 Accounts := $.File_Accounts.File;
 OUTPUT(Persons,NAMED('Persons'));
-OUTPUT(Accounts,NAMED('Acciounts'));
+OUTPUT(Accounts,NAMED('Accounts'));
 
 OUTPUT($.File_People.File,NAMED('NormPeople'));
 OUTPUT($.File_PeopleAll.People,NAMED('DNormPeople'));
